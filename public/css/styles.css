@@ -1,0 +1,13 @@
+.vertical-center {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.card:hover {
+    background-color: #fafafa;
+}
