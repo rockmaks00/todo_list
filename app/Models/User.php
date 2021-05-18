@@ -10,7 +10,7 @@ use Illuminate\Notifications\Notifiable;
 class User extends Authenticatable
 {
     use HasFactory, Notifiable;
-
+    //связь с tasks
     public function creator() {
         return $this->hasMany(Task::class, 'creator', 'id');
     }
@@ -18,7 +18,7 @@ class User extends Authenticatable
     public function responsible() {
         return $this->hasMany(Task::class, 'responsible', 'id');
     }
-
+    //связь с users
     public function leader() {
         return $this->belongsTo(User::class, 'leader', 'id');
     }

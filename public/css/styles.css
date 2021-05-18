@@ -11,3 +11,7 @@
 .card:hover {
     background-color: #fafafa;
 }
+
+.hand:hover {
+    cursor: pointer;
+}

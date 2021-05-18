@@ -30,8 +30,7 @@ class UserFactory extends Factory
             'patronymic' => $this->faker->firstName(),
             'email' => $this->faker->unique()->safeEmail(),
             'password' => Hash::make('password'),
-            'leader' => $this->faker->numberBetween(1, 3) == 1 ?
-                User::all()->random()->id : null,
+            'leader' => 1,
         ];
     }
 

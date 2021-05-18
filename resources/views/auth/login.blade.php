@@ -11,11 +11,11 @@
                     @csrf
                     <h1 class="h3 fw-light align-self-center mb-3">Добро пожаловать</h1>
                     <div class="form-floating mb-1">
-                        <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="email" placeholder="name@example.com" required>
+                        <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="email" minlength="5" maxlength="40" placeholder="name@example.com" required>
                         <label for="email">E-Mail</label>
                     </div>
                     <div class="form-floating">
-                        <input type="password" class="form-control @error('password') is-invalid @enderror" name="password" id="password" placeholder="Пароль" required>
+                        <input type="password" class="form-control @error('password') is-invalid @enderror" name="password" id="password" minlength="8" maxlength="40" placeholder="Пароль" required>
                         <label for="password">Пароль</label>
                     </div>
                     @foreach ($errors->all() as $error)

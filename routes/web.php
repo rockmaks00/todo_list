@@ -17,6 +17,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [IndexController::class, 'index'])->middleware(['auth']);
 
-Route::get('/tasks/get', [TasksController::class, 'get']);
+Route::get('/tasks/get', [TasksController::class, 'get'])->middleware(['auth']);
+Route::post('/tasks/create', [TasksController::class, 'create'])
+    ->middleware(['auth'])
+    ->name('create');
+Route::post('/tasks/update', [TasksController::class, 'update'])
+    ->middleware(['auth'])
+    ->name('update');
 
 require __DIR__.'/auth.php';
