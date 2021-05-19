@@ -1,5 +1,22 @@
 # Приложение TODO list
 
+## Тестирование
+
+Приложение: http://free184503.ispsite.ru/
+
+Список пользователей (у каждого пользователя пароль `password`:
+demarcus39@example.com
+ehaley@example.net
+travon16@example.net
+skiles.jamal@example.com
+fernando08@example.com
+rrath@example.com
+raleigh91@example.com
+jordon.ortiz@example.com
+ivan@gmail.com
+annabelle94@example.org
+iwisozk@example.net
+
 ## Описание
 
 Ваша задача - разработать web приложение, пользователь которого сможет планировать свою деятельность и контролировать работу своих подчиненных при помощи механизма управления задачами. `выбранные средства разработки: PHP/Laravel; JS/jQuery; HTML/Bootstrap; PostgreSQL.`
